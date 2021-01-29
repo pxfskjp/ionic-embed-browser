@@ -1,0 +1,125 @@
+/* SETTINGS RTL STYLE
+=======================================================
+=======================================================*/
+
+html[dir=rtl] {
+  cs-expandable-list-layout-1 {
+    .social-share {
+      left: 8px;
+      right: unset !important;
+    }
+  }
+  /* SETTINGS INPUT FIELD
+      =======================================================*/
+  .item-textarea,
+  ion-item.input {
+    &.item-has-focus,
+    &.item-has-value {
+      .label-floating {
+        transform: translateZ(0) scale(1) !important;
+      }
+    }
+
+    ion-icon {
+      left: 0;
+      right: unset;
+    }
+  }
+  /* SETTINGS COMMENTS WITH TIMELINE
+      =======================================================*/
+  cs-comment-layout-2 {
+    ion-item {
+      &:before {
+        left: unset;
+        right: 45px;
+      }
+    }
+  }
+  /* SETTINGS CARD
+    =======================================================*/
+  cs-google-card-list-layout-1 {
+    ion-thumbnail {
+      margin: 0 0 0 10px !important;
+    }
+  }
+
+  cs-google-card-list-layout-2 {
+    .title-card {
+      left: auto !important;
+      right: 16px;
+    }
+  }
+  /* SETTINGS TABS
+    =======================================================*/
+  ion-tabs {
+    app-tab1 {
+      h2 {
+        left: auto !important;
+        right: 16px;
+      }
+    }
+
+    app-tab5 {
+      ion-list > ion-item::before {
+        left: auto !important;
+        right: 45px;
+      }
+    }
+  }
+  /* SETTINGS TIMELINE
+    =======================================================*/
+  cs-timeline-layout-1,
+  cs-timeline-layout-3 {
+    ion-card {
+      &:after {
+        right: -30px;
+        left: unset;
+      }
+
+      &:before {
+        right: -36px;
+        left: unset;
+      }
+    }
+  }
+
+  cs-timeline-layout-2 {
+    .item-thumbnail {
+      &:after {
+        right: -30px;
+        left: unset;
+      }
+
+      &:before {
+        right: -36px;
+        left: unset;
+      }
+    }
+  }
+  /* SETTINGS ALERT
+  =======================================================*/
+
+  .alert-button-group {
+    padding: 8px 8px 8px 0 !important;
+  }
+
+  /* SETTINGS SCROLLL SEGMENT
+  =======================================================
+  =======================================================*/
+
+  cs-scroll-segment-layout-4 {
+    .page1 {
+      .background-size {
+        margin-left: 8px !important;
+        margin-right: 0 !important;
+      }
+
+      .small-image {
+        .background-size {
+          margin-right: 8px !important;
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+}

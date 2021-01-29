@@ -1,0 +1,21 @@
+<ion-app>
+  <!-- Header -->
+  <ion-header class="blue-gradient-1">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>{{data.toolbarTitle}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- Content -->
+  <ion-content class="transparent">
+    <ion-grid class="background-size">
+      <home-component
+      [data]="data"
+      (onItemClick)="onItemClick($event)">>
+      </home-component>
+      <img src="../../../assets/imgs/background/1.jpg" alt="">
+    </ion-grid>
+  </ion-content>
+</ion-app>

@@ -1,0 +1,74 @@
+.red {
+    /* Settings Fonts Size And Icon Size
+    =======================================================
+    =======================================================*/
+    --fallback-color: red;
+    --h1-font-size: 24px;
+    --h2-font-size: 16px;
+    --h3-font-size: 15px;
+    --h4-font-size: 14px;
+    --h5-font-size: 12px;
+    --h6-font-size: 10px;
+    --text-font-size: 12px;
+
+    /* Settings Fonts Size Icon
+    =======================================================
+    =======================================================*/
+    --icon-size-small: 20px;
+    --icon-size-medium: 32px;
+    --icon-size-large: 60px;
+
+    /* Settings Font Span
+    =======================================================
+    =======================================================*/
+    --span-size-small: 12px;
+    --span-size-medium: 24px;
+    --span-size-large: 30px;
+
+
+  /* Settings Color Background Our App
+  =======================================================
+  =======================================================*/
+  --cs-background-primary: #fff;
+  --cs-background-secondary: #f7f7f7;
+  --cs-background-accent: #FC1343;
+
+  /* Settings Color Text Our App
+  =======================================================
+  =======================================================*/
+  --cs-text-primary: #fff;
+  --cs-text-secondary: #FC1343;
+  --cs-text-accent: #455B65;
+
+  /* Settings Color Gradient Our App
+  =======================================================
+  =======================================================*/
+  --cs-blandModes-primary: #FC1343;
+  --cs-blandModes-secondary: #ffffff;
+  --cs-blandModes-accent: #FC1343;
+  --cs-mode-image: multiply;
+  --cs-gradient-linear: linear-gradient(to left, var(--cs-blandModes-primary) 0%, var(--cs-blandModes-accent) 100%);
+
+  /* Settings Color Gradient Toolbar
+  =======================================================
+  =======================================================*/
+  --cs-toolbar-primary: #FC1343;
+  --cs-toolbar-accent: #FC1343;
+  --cs-gradient-linear-toolbar: linear-gradient(to left, var(--cs-toolbar-primary) 0%, var(--cs-toolbar-accent) 100%);
+
+  /* Settings Size Avatar
+  =======================================================
+  =======================================================*/
+  --size-avatar: 60px;
+
+  /* Settings Border Radius
+  =======================================================
+  =======================================================*/
+  --border-radius: 4px;
+
+  /* Settings Color Icon
+  =======================================================
+  =======================================================*/
+  --cs-icon-color-primary: #FC1343;
+  --cs-icon-color-secondary: #fff;
+}

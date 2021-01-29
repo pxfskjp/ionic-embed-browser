@@ -1,0 +1,66 @@
+{
+  "_args": [
+    [
+      "cordova-plugin-google-analytics@1.9.0",
+      "F:\\tasks\\Ionic\\workana\\altares"
+    ]
+  ],
+  "_from": "cordova-plugin-google-analytics@1.9.0",
+  "_id": "cordova-plugin-google-analytics@1.9.0",
+  "_inBundle": false,
+  "_integrity": "sha512-o/UW4eJEi2YrqSJSUCJNQBBrk5V9+JT5V3djbPTIYi3rezuzJxJewxK2IjEmfgilTcZhN/Wrsqel6irL0NaRGA==",
+  "_location": "/cordova-plugin-google-analytics",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-google-analytics@1.9.0",
+    "name": "cordova-plugin-google-analytics",
+    "escapedName": "cordova-plugin-google-analytics",
+    "rawSpec": "1.9.0",
+    "saveSpec": null,
+    "fetchSpec": "1.9.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-google-analytics/-/cordova-plugin-google-analytics-1.9.0.tgz",
+  "_spec": "1.9.0",
+  "_where": "F:\\tasks\\Ionic\\workana\\altares",
+  "author": {
+    "name": "Dan Wilson"
+  },
+  "bugs": {
+    "url": "https://github.com/danwilson/google-analytics-plugin/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-google-analytics",
+    "platforms": [
+      "android",
+      "ios",
+      "windows",
+      "browser"
+    ]
+  },
+  "description": "Google Universal Analytics Plugin",
+  "homepage": "https://github.com/danwilson/google-analytics-plugin#readme",
+  "keywords": [
+    "cordova",
+    "googleanalytics",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "analytics",
+    "google",
+    "universal",
+    "universalanalytics"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-google-analytics",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danwilson/google-analytics-plugin.git"
+  },
+  "types": "./typescript/analytics.d.ts",
+  "version": "1.9.0"
+}

@@ -1,0 +1,44 @@
+:host {
+    --cs-text-accent: #0090d0;
+  }
+  
+  
+  ion-grid,
+  ion-row{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes animationLogo {
+      0% {transform: scale(0); opacity: 0;}
+      100%{ transform: scale(1); opacity: 1;}
+  }
+  
+  @keyframes animationLogo {
+    0% { transform: scale(0); opacity: 0;}
+    100%{ transform: scale(1); opacity: 1;}
+  }
+  
+  img {
+    width: 50vw;
+  }
+  
+  .animation {
+      position: absolute;
+      display: block;
+      text-align: center;
+      right: 0;
+      left: 0;
+      top: 50%;
+      margin-top: -80px;
+      -webkit-animation: animationLogo 900ms;  /* Safari 4.0 - 8.0 */
+      -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+      animation: animationLogo 900ms;
+      animation-delay: 500ms;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      z-index: 9999;
+  }
+  

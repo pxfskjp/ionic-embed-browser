@@ -1,0 +1,32 @@
+.background-size {
+  height: 150px;
+  position: relative;
+  background-color: var(--cs-text-primary, #ffffff);
+  background-blend-mode: luminosity;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: var(--cs-mode-image);
+    background: var(--cs-gradient-linear);
+  }
+
+  ion-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    --color: var(--cs-text-primary, #ffffff);
+
+    img {
+      width: 45vw;
+    }
+  }
+}

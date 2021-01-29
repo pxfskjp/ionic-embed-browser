@@ -1,0 +1,33 @@
+<ion-grid class="ion-no-padding" *ngIf="data != null">
+  <ion-row>
+    <ion-col size="12" size-md="6">
+      <ion-card class="ion-text-start box-shadow ion-padding-bottom"
+      >
+        <div class="card-header-image">
+          <!--Card image-->
+          <ion-img class="images-filter" [src]="data.image"></ion-img>
+        </div>
+        <!--Card content-->
+        <ion-card-content class="transparent">
+          <!--Card subtitle-->
+          <ion-card-title class="ion-padding-top">
+            <h3 class="font-size-title">{{data.title}}</h3>
+          </ion-card-title>
+          <!--Card description-->
+          <p class="text-size-md ion-padding-top bold">{{data.description}}</p>
+        </ion-card-content>
+        <!--Button share-->
+        <h3 align="center">{{data.sub_desc}}</h3>
+        <br />
+        <ion-button class="paypal-button" href="https://www.paypal.com/donate?business=rrl84%40yahoo.com.mx&item_name=MVI&currency_code=MXN">
+          <span class="paypal-logo">
+            <i>P</i><i>Pay</i><i>Pal</i>
+          </span>
+        </ion-button>
+        <!-- <ion-button shape="round" class="button-round" fill="outline">
+          {{data.sub_desc}}
+        </ion-button> -->
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

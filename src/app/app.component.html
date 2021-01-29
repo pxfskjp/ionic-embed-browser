@@ -1,0 +1,68 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu side="start" contentId="main-content" type="overlay">
+      <!-- Settings Toolbar -->
+      <ion-header class="background-size dark-gray"> 
+          <ion-item class="transparent ion-text-right" lines="none">
+            <ion-label class="ion-text-right">
+                <img class="ion-align-items-end" [src]="headerMenuItem.image">
+                <div class="clearfix"></div>
+            </ion-label>
+          </ion-item>
+      </ion-header>
+      <!-- Content -->
+      <ion-content>
+        <ion-grid class="ion-no-padding">
+          <ion-row class="ion-no-padding">
+            <ion-col size="12" class="ion-no-padding">
+              <!-- Menu List -->
+              <ion-list class="ion-no-padding" *ngFor="let p of appPages">
+                <ion-menu-toggle translate auto-hide="false" *ngIf="!isSubmenu">
+                  <ion-item lines="none" [routerDirection]="'root'"  *ngIf="!isRedirect(p) && !isSocial(p)" (click)="openPage(p)">
+                    <i slot="start" class="icon {{p.icon}} icon-small"></i>
+                    <ion-label>
+                      <h1 class="text-size-xs">{{p.title}}</h1>
+                    </ion-label>
+                    <!-- (click)="openExternal(p)"    [href]="p.redirect" -->
+                  </ion-item>
+                  <ion-item lines="none" [routerDirection]="'root'" *ngIf="isRedirect(p)" (click)="openExternal(p)">
+                    <i slot="start" class="icon {{p.icon}} icon-small"></i>
+                    <ion-label>
+                      <h1 class="text-size-xs">{{p.title}}</h1>
+                    </ion-label>
+                  </ion-item>
+                </ion-menu-toggle>
+                <ion-item lines="none" [routerDirection]="'root'" *ngIf="isSocial(p) && !isSubmenu" (click)="openSubmenu()">
+                  <i slot="start" class="icon {{p.icon}} icon-small"></i>
+                  <ion-label>
+                    <h1 class="text-size-xs">{{p.title}}</h1>
+                  </ion-label>
+                </ion-item>
+              </ion-list>
+
+              <!-- sub menu list -->
+              <ion-list class="ion-no-padding" *ngIf="isSubmenu">
+                <ion-item lines="none" [routerDirection]="'root'" (click)="backMainMenu()">
+                  <i slot="start" class="icon icon-keyboard-backspace icon-small"></i>
+                  <ion-label>
+                    <h1 class="text-size-xs">Regreasr</h1>
+                  </ion-label>
+                </ion-item>
+
+                <ion-menu-toggle translate auto-hide="false" *ngFor="let p of subMenu">
+                  <ion-item lines="none" [routerDirection]="'root'" (click)="openSocial(p)">
+                    <i slot="start" class="icon {{p.icon}} icon-small"></i>
+                    <ion-label>
+                      <h1 class="text-size-xs">{{p.title}}</h1>
+                    </ion-label>
+                  </ion-item>
+                </ion-menu-toggle>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

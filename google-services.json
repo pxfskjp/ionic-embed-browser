@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "606123713775",
+    "firebase_url": "https://ionic4-blue-light.firebaseio.com",
+    "project_id": "ionic4-blue-light",
+    "storage_bucket": "ionic4-blue-light.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606123713775:android:34e4c90e98abef57",
+        "android_client_info": {
+          "package_name": "com.csform.blueLight4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606123713775-i3g8e4tqebk3i1ao3nvo6a1mv0mtrphf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz7EKoqUZe6Vk38-KHnU3aiiitRVA9Qv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606123713775-i3g8e4tqebk3i1ao3nvo6a1mv0mtrphf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
